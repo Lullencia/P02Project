@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Checkout</title>
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/fonts.css">
+
+    <script src="https://code.iconify.design/iconify-icon/1.0.2/iconify-icon.min.js"></script>
+
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="nav-links">
+            <a class="button-nav">New Arrivals</a>
+            <a class="button-nav">Best Sellers</a>
+            <a class="button-nav">Guitars</a>
+        </div>
+        
+        <h4 class="red-color">Guitar Store</h4>
+        <div class="nav-links">
+            <div class="nav-links">
+                <iconify-icon icon="ph:magnifying-glass-bold" class="icon-nav" width="1.25rem"></iconify-icon>
+                <a class="button-nav">Search</a>
+            </div>
+            <div class="nav-links">
+                <iconify-icon icon="akar-icons:person" class="icon-nav" width="1.25rem"></iconify-icon>
+                <a class="button-nav">Profile</a>
+            </div>
+            <div class="nav-links">
+                <iconify-icon icon="material-symbols:shopping-cart-outline" class="icon-nav"
+                    width="1.5rem"></iconify-icon>
+                <a class="button-nav">Cart</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="breadcrumb-links">
+        <a class="breadcrumb-nav">Cart</a>
+        <a class="breadcrumb-nav">Shipping</a>
+        <a class="breadcrumb-nav">Payment</a>
+    </div>
+
+    <section class="section-title">
+        <h2>Checkout Cart</h2>
+    </section>
+
+
+    <section id="shopping-cart">
+        <div class="product-listing-row">
+            <div class="product-listing-column-1">
+                <h4>Your Order</h4><br>
+
+                <div class="product-form-row">
+                    <div class="product-form-row">
+                        <img src="clifford-6.png" class="img" alt="Gibson Guitar" style="width:8rem">
+                        <div class="product-form-column">
+                            <h4>Gibson Melody Maker</h4>
+                            <p>Jet Black Cherry</p>
+                        </div>
+                    </div>
+
+                    <div class="product-form-column">
+                        <h5 class="black-color">QUANTITY</h5>
+                        <div class="order-quantity-container">
+                            <iconify-icon icon="ic:baseline-minus" class="icon-nav" width="1.25rem"></iconify-icon>
+                            <p>1</p>
+                            <iconify-icon icon="ic:baseline-plus" class="icon-nav" width="1.25rem"></iconify-icon>
+                        </div>
+                    </div>
+
+                    <div class="product-form-column">
+                        <h5 class="black-color">TOTAL</h5>
+                        <h5>$699.99</h5>
+                    </div>
+                </div>
+
+                <div class="product-form-row">
+                    <div class="product-form-row">
+                        <img src="dunlop-capo.jpg" class="img" alt="Gibson Guitar" style="width:8rem">
+                        <div class="product-form-column">
+                            <h4>Dunlop Trigger Fly Capo</h4>
+                            <p>Satin Chrome</p>
+                        </div>
+                    </div>
+
+                    <div class="product-form-column">
+                        <h5 class="black-color">QUANTITY</h5>
+                        <div class="order-quantity-container">
+                            <iconify-icon icon="ic:baseline-minus" class="icon-nav" width="1.25rem"></iconify-icon>
+                            <p>1</p>
+                            <iconify-icon icon="ic:baseline-plus" class="icon-nav" width="1.25rem"></iconify-icon>
+                        </div>
+                    </div>
+
+                    <div class="product-form-column">
+                        <h5 class="black-color">TOTAL</h5>
+                        <h5>$19.99</h5>
+                    </div>
+                </div>
+
+                <div class="product-form-row-total">
+                    <h5 class="black-color">Checkout Total</h5>
+                    <p><u>$719.98</u></p>
+                </div>
+
+            </div>
+            <div class="product-listing-column-2">
+                <h4>Payment Method</h4><br>
+                <table>
+                    <tr>
+                        <td>
+                            <input type="radio" class="radio-input" id="credit-card" name="input">
+                            <label class="radio-text-input" for="credit-card">Credit Card</label>
+
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="radio" class="radio-input" id="paypal" name="input">
+                            <label class="radio-text-input" for="paypal">Paypal</label>
+                        </td>
+                    </tr>
+                </table><br>
+
+                <div class="payment-form-column">
+                    <label class="text-input-label" for="fname-field">Cardholder Name</label>
+                    <input type="text" placeholder="Full Name" class="text-input-field" id="fname-field" name="input">
+                </div>
+
+                <div class="payment-form-column">
+                    <label class="text-input-label" for="cnumber">Card Number</label>
+                    <input type="text" placeholder="1234-1234-1234-1234" class="text-input-field" id="cnumber"
+                        name="input">
+                </div>
+
+                <div class="payment-form-row">
+                    <div class="payment-form-column-2">
+                        <label class="text-input-label" for="expiration-field">Expiration Date</label>
+                        <input type="text" placeholder="MM / YY" class="text-input-field" id="expiration-field"
+                            name="input">
+                    </div>
+                    <div class="payment-form-column">
+                        <label class="text-input-label" for="security-field">Security Code</label>
+                        <input type="text" placeholder="CVC" class="text-input-field" id="security-field" name="input">
+                    </div>
+                </div>
+
+
+                <br><br>
+                <input type="submit" class="button-submit-red" value="PROCEED WITH PAYMENT">
+                <input type="reset" class="button-reset" value="CANCEL ORDER">
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>

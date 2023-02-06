@@ -1,0 +1,615 @@
+/*
+  STYLE GUIDE STYLING 
+  Default styling for the style guide 
+*/
+body {
+  background-color: #ffffff;
+  color: #191919;
+  font-family: 'GeneralSans';
+}
+
+.element {
+  border-top-width: 0.15rem;
+  border-top-style: solid;
+  border-top-color: #EEE;
+
+  padding: 2rem;
+  max-width: 60em;
+}
+
+.section-title {
+  margin: 1em 2em;
+}
+
+.section-full-bleed {
+  padding: 3em 2em;
+  margin: 3em 0 3em 0;
+
+  background-color: #ffffff;
+
+
+  border-width: 1px;
+  border-color: #EEE;
+
+  border-top-style: solid;
+  border-right-style: hidden;
+  border-left-style: hidden;
+  border-bottom-style: solid;
+}
+
+.section-content {
+  margin: 1em 2em 5em 2em;
+
+  max-width: 60em;
+}
+
+.section-content-center {
+  margin: 1em 2em 5em 2em;
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+h1 {
+  font-weight: 700;
+  font-size: 3em;
+
+  margin: 0.25em 0 0.25em 0;
+}
+
+h2 {
+  font-weight: 600;
+  font-size: 2.5em;
+
+  margin: 0.25em 0 0.25em 0;
+}
+
+h3 {
+  font-weight: 600;
+  font-size: 1.5em;
+
+  margin: 0.25em 0 0.25em 0;
+
+  text-transform: uppercase;
+}
+
+h4 {
+  font-weight: 600;
+  font-size: 1.25em;
+
+  margin: 0.25em 0 0.25em 0;
+}
+
+h5 {
+  font-weight: 600;
+  font-size: 1em;
+
+  margin: 0.5em 1em 0.5em 0;
+
+  text-transform: uppercase;
+  color: #CD3B28;
+}
+
+p {
+  font-weight: 400;
+  font-size: 1em;
+  margin: 0;
+}
+
+b {
+  font-weight: 600;
+}
+
+a {
+  color: #CD3B28;
+}
+
+.color-ellipse:hover,
+.color-ellipse:focus,
+a:hover,
+a:focus {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+code {
+  background-color: #EEE;
+  padding: 0.5rem;
+  display: block;
+
+}
+
+/* 
+  INTERACTIVE ELEMENTS -------------------
+*/
+
+/* Styling for the navigation button. Styling for submit and reset buttons taken inspiration from button-nav*/
+.button-nav {
+  display: inline-block;
+  padding: 0.5em;
+  margin-right: 2.5em;
+
+  font-size: 0.9em;
+
+  color: #a3a3a3;
+  font-weight: 400;
+
+  text-decoration: none;
+  transition-property: color;
+  transition-duration: 0.5s;
+}
+
+.icon-nav{
+  color: #a3a3a3; 
+  
+  transition-property: color;
+  transition-duration: 0.5s;
+}
+
+.breadcrumb-nav {
+  display: inline-block;
+  padding: 0.5em;
+  font-size: 0.75em;
+
+  color: #a3a3a3;
+  font-weight: 400;
+
+  text-decoration: none;
+  transition-property: color;
+  transition-duration: 0.5s;
+}
+
+
+/* Breadcrumb divider from https://codepen.io/Martin-Muzatko/pen/neJNNy */
+
+.breadcrumb-nav:after {
+  content: '/';
+  display: inline;
+  font-size: 1.2em;
+  color: #AAA;
+
+
+  padding: 0 .0725em 0 1.15em;
+}
+
+.icon-nav:hover,
+.icon-nav:focus,
+.button-nav:hover,
+.breadcrumb-nav:hover,
+.breadcrumb-nav:focus,
+.button-nav:focus {
+  color: #5A5A5A;
+  cursor: pointer;
+
+  transition-property: color;
+  transition-duration: 0s;
+}
+
+.button-nav:active {
+  color: #CD3B28;
+  font-weight: 500;
+}
+
+.button-submit {
+  display: inline-block;
+  padding: 1.25em 3em 1.25em 3em;
+
+  margin: 0.5em;
+
+  font-size: 0.75em;
+  font-weight: 600;
+
+  color: white;
+  background-color: #191919;
+  border: none;
+
+  text-decoration: none;
+  transition-property: background-color;
+  transition-duration: 0.25s;
+}
+
+.button-submit-red:hover,
+.button-submit-red:focus {
+  background-color: #ad3120;
+  cursor: pointer;
+}
+
+.button-submit-red {
+  display: inline-block;
+  padding: 1.25em 3em 1.25em 3em;
+
+  margin: 0.5em;
+
+  font-size: 0.75em;
+  font-weight: 600;
+
+  color: white;
+  background-color: #CD3B28;
+  border: none;
+
+  text-decoration: none;
+  transition-property: background-color;
+  transition-duration: 0.25s;
+}
+
+.button-submit:hover,
+.button-submit:focus {
+  background-color: #4d4d4d;
+  cursor: pointer;
+}
+
+.button-reset {
+  display: inline-block;
+  padding: 1.25em 3em 1.25em 3em;
+
+  margin: 0.5em;
+
+  font-size: 0.75em;
+  font-weight: 600;
+  color: #191919;
+
+  border-color: #191919;
+  border-width: 1px;
+  background-color: white;
+  border-style: solid;
+
+  text-decoration: none;
+  transition-property: background-color;
+  transition-duration: 0.25s;
+}
+
+.button-reset:hover,
+.button-reset:focus {
+  background-color: #fbfafa;
+  cursor: pointer;
+}
+
+.button-reset-red {
+  display: inline-block;
+  padding: 1.25em 3em 1.25em 3em;
+
+  margin: 0.5em;
+
+  font-size: 0.75em;
+  font-weight: 600;
+  color: #CD3B28;
+
+  border-color: #CD3B28;
+  border-width: 1px;
+  background-color: white;
+  border-style: solid;
+
+  text-decoration: none;
+  transition-property: background-color;
+  transition-duration: 0.25s;
+}
+
+.button-reset-red:hover,
+.button-reset-red:focus {
+  background-color: #fefaf9;
+  cursor: pointer;
+}
+
+
+.text-input-label {
+  font-size: 0.9em;
+  color: #5A5A5A;
+
+  margin: 1.5em 0 0.25em 0;
+}
+
+.text-input-field {
+  margin-top: 0.5em;
+  height: 2.25em; 
+
+  padding-left: 1em;
+  padding-right: 1em;
+
+  font-size: 1em;
+  color: #191919;
+
+  border-width: 1px;
+  border-color: #191919;
+
+  background-color: #ffffff;
+
+  border-top-style: hidden;
+  border-right-style: hidden;
+  border-left-style: hidden;
+  border-bottom-style: groove;
+
+  text-decoration: none;
+  transition-property: background-color;
+  transition-duration: 0.25s;
+}
+
+
+.payment-text-input-field:hover,
+.payment-text-input-field:active,
+.text-input-field:hover,
+.text-input-field:focus {
+  background-color: #f7f7f7;
+  cursor: text;
+}
+
+
+.radio-input {
+  margin-right: 1em;
+
+  border-width: 1px;
+  border-color: #191919;
+
+  border-top-style: hidden;
+  border-right-style: hidden;
+  border-left-style: hidden;
+  border-bottom-style: groove;
+}
+
+.radio-input:hover,
+.radio-input:focus,
+.radio-text-input:hover,
+.radio-text-input:focus {
+  cursor: pointer;
+}
+
+
+.black-color {
+  color: #191919;
+}
+
+.red-color {
+  color: #CD3B28;
+  margin-right: 2.5em;
+}
+
+.green-color {
+  color: #4B9F31;
+}
+
+
+/* Table found from https://www.w3schools.com/css/css_table.asp */
+
+table, td, th {
+  border: 1px solid;
+  border-color: #EEE;
+
+
+  text-align: left;
+  align-items: center;
+
+  padding: 1em;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+tr:hover {background-color: #f7f7f7;}
+
+.payment-form-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.payment-form-column-2 {
+  display: flex;
+  flex-direction: column;
+
+  margin-right: 1em;
+}
+
+.payment-form-row {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+
+  justify-content: space-between;
+  padding-bottom: 1em;
+}
+
+.product-form-row{
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+
+  justify-content: space-between;
+  padding-bottom: 1em;
+}
+
+.product-form-row-total{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  justify-content: space-between;
+  margin-top: 2em;
+  padding-top: 2em;
+  padding-right: 2em;
+
+
+  border-top: 1px solid #EEE;
+}
+
+.product-form-column {
+  display: flex;
+  flex-direction: column;
+
+  margin: 0 1.5em;
+}
+
+.order-quantity-container {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+
+  justify-content: space-between;
+
+  border: 1px solid;
+  border-color: #EEE;
+  padding: 0.5em 1em;
+}
+
+/* 
+  TEXT ELEMENTS -------------------
+*/
+
+
+
+
+/* 
+  CARD from https://www.w3schools.com/howto/howto_css_product_card.asp
+*/
+
+.card {
+  /* Add shadows to create the "card" effect */
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0);
+
+  transition-property: box-shadow;
+  transition: 0.3s;
+
+  max-width: 15rem;
+
+  margin: 0 0.5em;
+
+
+
+  background-color: #ffffff;
+
+
+  border-width: 1px;
+  border-color: #EEE;
+
+  border-style: solid;
+}
+
+/* Word-wrap found from https://www.w3schools.com/cssref/css3_pr_word-wrap.php */
+
+.card-text {
+  padding: 1rem;
+  word-wrap: break-word;
+}
+
+/* On mouse-over, add a deeper shadow */
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+/* Styling only select borders found from https://www.w3docs.com/snippets/css/how-to-remove-and-style-the-border-outline-around-text-input-boxes-in-google-chrome.html */
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+
+  border-width: 1px;
+  border-color: #EEE;
+
+  border-top-style: hidden;
+  border-right-style: hidden;
+  border-left-style: hidden;
+  border-bottom-style: solid;
+
+  margin: auto;
+
+  padding: 1.5em 2em;
+}
+
+.nav-links {
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+}
+
+.breadcrumb-links {
+  display: flex;
+  align-items: center;
+
+  margin: 1.5em 2em;
+}
+
+.product-listing-row {
+  display: flex;
+  flex-direction: row;
+
+  margin: 2em;
+}
+
+.product-listing-column-1 {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 60rem;
+
+  margin-right: 3em;
+}
+
+.product-listing-column-2 {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 20rem;
+}
+
+.product-listing-text-column {
+  display: flex;
+  flex-direction: column;
+
+  margin: 0 4em 1em 0;
+}
+
+.product-listing-text-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  justify-content: space-between;
+  margin: 0.5em 0 0.5em 0;
+}
+
+.img-gallery-row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+
+  justify-content: center;
+
+  margin: 1em 3em 1em 3em;
+}
+
+
+.hero-img,
+.img {
+  background-color: #f7f7f7;
+
+  margin: 0.25em;
+
+  transition-property: background-color;
+  transition-duration: 0.25s;
+}
+
+
+.hero-img:hover {
+  background-color: #ffffff;
+
+  cursor: zoom-in;
+}
+
+.img:hover {
+  background-color: #ffffff;
+
+  cursor: pointer;
+}
+
+
+.color-ellipse {
+  border-color: #CD3B28;
+  border-width: 1em;
+
+  margin: 1em 0 1em 0;
+}

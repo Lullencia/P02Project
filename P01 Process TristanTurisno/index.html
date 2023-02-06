@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <title>P01 - Process</title>
+
+  <!-- all css files taken from completed css basics lab, minus font changes and other elements in main.css // -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/fonts.css">
+
+  <script src="https://code.iconify.design/iconify-icon/1.0.2/iconify-icon.min.js"></script>
+
+</head>
+
+<body>
+
+  <header>
+    <section class="element">
+      <h1>P01 - Process</h1>
+      <h2>Tristan Turisno 301302840</h2>
+
+      <nav>
+        <a href="#interactive_elements">Interactive Elements</a>
+        <a href="#text_elements">Text Elements</a>
+        <a href="#combined_elements">Combined Elements</a>
+        <a href="#brand_components">Brand Components</a>
+        <a href="#citations">Citations</a><br><br>
+      </nav>
+
+      <a href="product_listing.html" class="button-submit-red" target="_blank">PRODUCT PAGE</a>
+
+      <a href="checkout.html" class="button-submit-red" target="_blank">CHECKOUT PAGE</a>
+
+    </section>
+  </header>
+
+
+  <!-- INTERACTIVE ELEMENTS SECTION // -->
+  <section id="interactive_elements">
+    <h2 class="element">Interactive Elements</h2>
+
+
+    <section class="element">
+      <h3>In-text link</h3>
+
+      <h4>Sample code:</h4>
+      <code>&lt;p&gt; Hi, I'm an &lt;a href=" ">in-text link&lt;/a&gt;.&lt;/p&gt;</code><br><br>
+
+      <h4>Rendered element:</h4><br>
+      <p>Hi, I'm an <a href="#interactive_elements">in-text link</a>.</p>
+    </section>
+
+
+    <!-- Default Button styling section -->
+    <section class="element">
+
+      <h3>Navigation Link</h3>
+
+      <h4>CSS selector:</h4><br>
+      <p>.button-nav</p><br><br>
+
+      <h4>Sample code:</h4><br>
+      <code>&lt;a class="button-nav"&gt;NAVIGATION&lt;/a&gt;</code><br><br>
+
+      <h4>Rendered element:</h4><br>
+      <a class="button-nav">NAVIGATION</a>
+    </section>
+
+
+    <section class="element">
+      <h3>Submit/Reset Buttons</h3>
+      <h4>CSS selector:</h4><br>
+      <p>.button-submit</p>
+      <p>.button-submit-red</p><br><br>
+
+      <h4>Sample code:</h4><br>
+      <code>
+        &lt;input type="submit" class="button-submit" value="SUBMIT"&gt;<br>
+        &lt;input type="submit" class="button-submit-red" value="REMOVE"&gt;
+      </code><br><br>
+
+      <h4>Rendered element:</h4><br>
+      <input type="submit" class="button-submit" value="SUBMIT"><br><br>
+      <input type="submit" class="button-submit-red" value="REMOVE"><br><br><br><br>
+
+      <h4>CSS selector:</h4><br>
+      <p>.button-reset</p>
+      <p>.button-reset-red</p><br><br>
+
+      <h4>Sample code:</h4><br>
+      <code>
+        &lt;input type="reset" class="button-reset" value="RESET"&gt;<br>
+        &lt;input type="reset" class="button-reset-red" value="CANCEL"&gt;
+      </code><br><br>
+
+      <h4>Rendered element:</h4><br>
+      <input type="reset" class="button-reset" value="RESET"><br><br>
+      <input type="reset" class="button-reset-red" value="CANCEL"><br><br>
+    </section>
+
+
+    <section class="element">
+      <h3>Text Input Field with Label</h3>
+
+      <h4>CSS selector:</h4><br>
+      <p>.text-input-label</p>
+      <p>.input-field</p><br><br>
+
+      <h4>Sample code:</h4>
+      <code>&lt;label class = "text-input-label" for="i-field">Label&lt;/label&gt;<br>
+        &lt;input type="text" placeholder="Type something here" class="text-input-field" id="i-field" name="input"&gt;</code><br><br>
+
+      <h4>Rendered element:</h4><br>
+      <label class="text-input-label" for="i-field">Label</label><br>
+      <input type="text" placeholder="Type something here" class="text-input-field" id="i-field" name="input">
+    </section>
+
+
+    <section class="element">
+      <h3>Radio Button with Label</h3>
+
+      <h4>CSS selector:</h4><br>
+      <p>.radio-input</p>
+      <p>.radio-text-input</p><br><br>
+
+      <h4>Sample code:</h4><br>
+      <code>&lt;input type="radio" class = "radio-input"  id="radio-input" name="input"&gt;<br>
+        &lt;label class = "radio-text-input" for="radio-input">Label&lt;/label&gt;</code><br><br>
+
+      <h4>Rendered element:</h4><br>
+      <input type="radio" class="radio-input" id="radio-input" name="input">
+      <label class="radio-text-input" for="radio-input">Label</label>
+
+    </section>
+
+
+    <section class="element">
+      <h3>Image as a Link</h3>
+
+      <h4>CSS selector:</h4><br>
+      <p>.img</p><br><br>
+
+      <h4>Sample code:</h4><br>
+      <code>
+        &lt;a href=&quot;https://www.youtube.com/watch?v=YzFDUWj3Vto&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;clifford-1.png&quot; class=&quot;img&quot;
+          alt=&quot;Gibson Guitar&quot; style=&quot;width:100%&quot;&gt;&lt;/a&gt;</code><br><br>
+
+      <h4>Rendered element:</h4><br>
+      <a href="https://www.youtube.com/watch?v=YzFDUWj3Vto" target="_blank"><img src="clifford-6.png" class="img"
+          alt="Gibson Guitar" style="width:5rem"></a>
+    </section>
+
+
+  </section>
+  <!-- // INTERACTIVE ELEMENTS SECTION -->
+
+
+
+  <!-- TEXT ELEMENTS SECTION // -->
+  <section id="text_elements">
+    <h2 class="element">Text Elements</h2>
+
+    <section class="element">
+      <h3>Headings</h3>
+
+      <h1>Header 1</h1>
+      <h2>Header 2</h2>
+      <h3>Header 3</h3>
+      <h4>Header 4</h4>
+      <h5>Header 5</h5>
+    </section>
+
+    <section class="element">
+      <h3>Paragraphs</h3>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque iaculis lectus et lorem efficitur
+        porttitor. Fusce feugiat hendrerit commodo. Nam ac ornare nisi. Quisque malesuada nisi eu interdum hendrerit.
+        Nam at elit eros. Donec imperdiet elit dolor, a pulvinar orci pellentesque quis. Pellentesque ultrices orci
+        vel diam tempus, nec pellentesque tortor consequat. Nam fringilla sapien augue. Donec maximus mi at neque
+        dictum rutrum. Curabitur dictum sit amet tortor a viverra. Suspendisse at varius eros, in porta dolor. Proin
+        at convallis purus, in scelerisque quam.</p>
+    </section>
+
+    <section class="element">
+      <h3>Numbered Lists</h3>
+      <ol type="1">
+        <li>Item </li>
+        <li>Item</li>
+        <li>Item</li>
+      </ol>
+    </section>
+
+  </section>
+  <!-- // TEXT ELEMENTS SECTION -->
+
+
+
+  <!-- COMBINED ELEMENTS SECTION // -->
+  <section id="combined_elements">
+    <h2 class="element">Combined Elements</h2>
+
+    <section class="element">
+      <h3>Main Navigation</h3>
+
+      <h4>CSS selector:</h4><br>
+      <p>.button-nav</p><br>
+
+      <h4>Sample code:</h4><br>
+      <code>
+        &lt;a class=&quot;button-nav&quot;&gt;NAVIGATION 1&lt;/a&gt;<br>
+        &lt;a class=&quot;button-nav&quot;&gt;NAVIGATION 2&lt;/a&gt;<br>
+        &lt;a class=&quot;button-nav&quot;&gt;NAVIGATION 3&lt;/a&gt;<br>
+        &lt;a class=&quot;button-nav&quot;&gt;NAVIGATION 4&lt;/a&gt;<br>
+      </code><br>
+
+      <h4>Rendered element:</h4><br>
+      <a class="button-nav">NAVIGATION 1</a>
+      <a class="button-nav">NAVIGATION 2</a>
+      <a class="button-nav">NAVIGATION 3</a>
+      <a class="button-nav">NAVIGATION 4</a>
+
+    </section>
+
+    <section class="element">
+      <h3>Product/Service Listing</h3>
+
+      <h4>CSS selector:</h4><br>
+      <p>.card</p>
+      <p>.card-text</p>
+      <p>.product-listing-text-row</p>
+      <p>.black-color</p>
+      
+      <br><br>
+
+      <h4>Sample code:</h4><br>
+      <code>&lt;div class=&quot;card&quot;&gt;<br>
+        &lt;a href=&quot;https://www.youtube.com/watch?v=YzFDUWj3Vto&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;clifford.jpg&quot; alt=&quot;Gibson Guitar&quot; style=&quot;width:100%&quot;&gt;&lt;/a&gt;<br><br>
+      &lt;div class=&quot;card-text&quot;&gt;<br>
+        &lt;h4&gt;Title&lt;/h4&gt;<br>
+        &lt;p&gt;Subtitle&lt;/p&gt;<br><br>
+        &lt;div class = &quot;product-listing-text-row&quot;&gt;<br>
+        &lt;h5&gt;$XX&lt;/h5&gt;<br>
+        &lt;h5 class = &quot;black-color&quot;&gt;EXTRA&lt;/h5&gt;<br>
+        &lt;/div&gt;<br>
+        &lt;/div&gt;<br>
+        &lt;/div&gt;<br><br></code><br><br>
+
+      <h4>Rendered element:</h4><br>
+      <div class="card">
+        <a href="https://www.youtube.com/watch?v=YzFDUWj3Vto" target="_blank"><img src="clifford.jpg"
+            alt="Gibson Guitar" style="width:100%"></a>
+
+        <div class="card-text">
+          <h4>Title</h4>
+          <p>Subtitle</p><br>
+
+          <div class="product-listing-text-row">
+            <h5>$XX</h5>
+            <h5 class="black-color">EXTRA</h5>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+    <section class="element">
+      <h3>Payment Form</h3>
+
+      <h4>CSS selector:</h4><br>
+      <p>.text-input-field</p>
+      <p>.text-input-label</p>
+      <p>.payment-form-row</p>
+      <p>.payment-form-column</p>
+      <p>.payment-form-column-2</p>
+      <p>.radio-input</p>
+      <p>.radio-text-input</p>
+      <p>.button-submit</p>
+      <p>.button-submit-red</p><br><br>
+
+
+      <h4>Sample code:</h4><br>
+      <code>
+        &lt;div class=&quot;product-listing-column-2&quot;&gt;<br>
+        &lt;h4&gt;Payment Method&lt;/h4&gt;&lt;br&gt;<br>
+        &lt;table&gt;<br>
+          &lt;tr&gt;<br>
+            &lt;td&gt;<br>
+              &lt;input type=&quot;radio&quot; class=&quot;radio-input&quot; id=&quot;credit-card&quot; name=&quot;input&quot;&gt;<br>
+              &lt;label class=&quot;radio-text-input&quot; for=&quot;credit-card&quot;&gt;Credit Card&lt;/label&gt;<br><br>
+
+          &lt;/tr&gt;<br>
+          &lt;tr&gt;<br>
+            &lt;td&gt;<br>
+              &lt;input type=&quot;radio&quot; class=&quot;radio-input&quot; id=&quot;paypal&quot; name=&quot;input&quot;&gt;<br>
+              &lt;label class=&quot;radio-text-input&quot; for=&quot;paypal&quot;&gt;Paypal&lt;/label&gt;<br>
+            &lt;/td&gt;<br>
+          &lt;/tr&gt;<br>
+        &lt;/table&gt;<br><br>
+
+        &lt;div class=&quot;payment-form-column&quot;&gt;<br>
+          &lt;label class=&quot;text-input-label&quot; for=&quot;fname-field&quot;&gt;Cardholder Name&lt;/label&gt;<br>
+          &lt;input type=&quot;text&quot; placeholder=&quot;Full Name&quot; class=&quot;text-input-field&quot; id=&quot;fname-field&quot; name=&quot;input&quot;&gt;<br>
+        &lt;/div&gt;<br><br>
+
+        &lt;div class=&quot;payment-form-column&quot;&gt;<br>
+          &lt;label class=&quot;text-input-label&quot; for=&quot;cnumber&quot;&gt;Card Number&lt;/label&gt;<br>
+          &lt;input type=&quot;text&quot; placeholder=&quot;1234-1234-1234-1234&quot; class=&quot;text-input-field&quot; id=&quot;cnumber&quot; name=&quot;input&quot;&gt;<br>
+        &lt;/div&gt;<br><br>
+
+        &lt;div class=&quot;payment-form-row&quot;&gt;<br>
+          &lt;div class=&quot;payment-form-column-2&quot;&gt;<br>
+            &lt;label class=&quot;text-input-label&quot; for=&quot;expiration-field&quot;&gt;Expiration Date&lt;/label&gt;<br>
+            &lt;input type=&quot;text&quot; placeholder=&quot;MM / YY&quot; class=&quot;text-input-field&quot; id=&quot;expiration-field&quot; name=&quot;input&quot;&gt;<br>
+          &lt;/div&gt;<br><br>
+
+          &lt;div class=&quot;payment-form-column&quot;&gt;<br>
+            &lt;label class=&quot;text-input-label&quot; for=&quot;security-field&quot;&gt;Security Code&lt;/label&gt;<br>
+            &lt;input type=&quot;text&quot; placeholder=&quot;CVC&quot; class=&quot;text-input-field&quot; id=&quot;security-field&quot; name=&quot;input&quot;&gt;<br>
+          &lt;/div&gt;<br>
+        &lt;/div&gt;<br><br>
+
+        &lt;br&gt;<br>
+        &lt;input type=&quot;submit&quot; class=&quot;button-submit-red&quot; value=&quot;PROCEED WITH PAYMENT&quot;&gt;<br>
+        &lt;input type=&quot;reset&quot; class=&quot;button-reset&quot; value=&quot;CANCEL ORDER&quot;&gt;<br>
+      &lt;/div&gt; <br>
+      </code><br><br>
+
+
+      <h4>Rendered element:</h4><br>
+
+      <h4>Payment Method</h4><br>
+      <div class="product-listing-column-2">
+        <table>
+          <tr>
+            <td>
+              <input type="radio" class="radio-input" id="credit-card" name="input">
+              <label class="radio-text-input" for="credit-card">Credit Card</label>
+
+          </tr>
+          <tr>
+            <td>
+              <input type="radio" class="radio-input" id="paypal" name="input">
+              <label class="radio-text-input" for="paypal">Paypal</label>
+            </td>
+          </tr>
+        </table><br>
+
+        <div class="payment-form-column">
+          <label class="text-input-label" for="fname-field">Cardholder Name</label>
+          <input type="text" placeholder="Full Name" class="text-input-field" id="fname-field" name="input">
+        </div>
+
+        <div class="payment-form-column">
+          <label class="text-input-label" for="cnumber">Card Number</label>
+          <input type="text" placeholder="1234-1234-1234-1234" class="text-input-field" id="cnumber" name="input">
+        </div>
+
+        <div class="payment-form-row">
+          <div class="payment-form-column-2">
+            <label class="text-input-label" for="expiration-field">Expiration Date</label>
+            <input type="text" placeholder="MM / YY" class="text-input-field" id="expiration-field" name="input">
+          </div>
+          <div class="payment-form-column">
+            <label class="text-input-label" for="security-field">Security Code</label>
+            <input type="text" placeholder="CVC" class="text-input-field" id="security-field" name="input">
+          </div>
+        </div>
+
+
+        <br><br>
+        <input type="submit" class="button-submit-red" value="PROCEED WITH PAYMENT">
+        <input type="reset" class="button-reset" value="CANCEL ORDER">
+      </div>
+
+    </section>
+
+    <section class="element">
+      <h3>Checkout Cart</h3>
+      <h4>CSS selector:</h4><br>
+      <p>.product-form-row</p>
+      <p>.product-form-column</p>
+      <p>.order-quantity-container</p>
+      <p>.black-color</p>
+      <p>.img</p><br><br>
+
+      <h4>Sample code:</h4><br>
+      <code>
+        &lt;div class=&quot;product-form-row&quot;&gt;<br>
+                    &lt;div class=&quot;product-form-row&quot;&gt;<br>
+                        &lt;img src=&quot;clifford-6.png&quot; class=&quot;img&quot; alt=&quot;Gibson Guitar&quot; style=&quot;width:8rem&quot;&gt;<br>
+                        &lt;div class=&quot;product-form-column&quot;&gt;<br>
+                            &lt;h4&gt;Gibson Melody Maker&lt;/h4&gt;<br>
+                            &lt;p&gt;Jet Black Cherry&lt;/p&gt;<br>
+                        &lt;/div&gt;<br>
+                    &lt;/div&gt;<br><br>
+
+                    &lt;div class=&quot;product-form-column&quot;&gt;<br>
+                        &lt;h5 class=&quot;black-color&quot;&gt;QUANTITY&lt;/h5&gt;<br>
+                        &lt;div class=&quot;order-quantity-container&quot;&gt;<br>
+                            &lt;iconify-icon icon=&quot;ic:baseline-minus&quot; class=&quot;icon-nav&quot; width=&quot;1.25rem&quot;&gt;&lt;/iconify-icon&gt;<br>
+                            &lt;p&gt;1&lt;/p&gt;<br>
+                            &lt;iconify-icon icon=&quot;ic:baseline-plus&quot; class=&quot;icon-nav&quot; width=&quot;1.25rem&quot;&gt;&lt;/iconify-icon&gt;<br>
+                        &lt;/div&gt;<br>
+                    &lt;/div&gt;<br><br>
+
+                    &lt;div class=&quot;product-form-column&quot;&gt;<br>
+                        &lt;h5 class=&quot;black-color&quot;&gt;TOTAL&lt;/h5&gt;<br>
+                        &lt;h5&gt;$699.99&lt;/h5&gt;<br>
+                    &lt;/div&gt;<br>
+                &lt;/div&gt;
+      </code><br><br>
+
+
+      <h4>Rendered element:</h4><br>
+      <div class="product-form-row">
+        <div class="product-form-row">
+          <img src="clifford-6.png" class="img" alt="Gibson Guitar" style="width:8rem">
+          <div class="product-form-column">
+            <h4>Gibson Melody Maker</h4>
+            <p>Jet Black Cherry</p>
+          </div>
+        </div>
+
+        <div class="product-form-column">
+          <h5 class="black-color">QUANTITY</h5>
+          <div class="order-quantity-container">
+            <iconify-icon icon="ic:baseline-minus" class="icon-nav" width="1.25rem"></iconify-icon>
+            <p>1</p>
+            <iconify-icon icon="ic:baseline-plus" class="icon-nav" width="1.25rem"></iconify-icon>
+          </div>
+        </div>
+
+        <div class="product-form-column">
+          <h5 class="black-color">TOTAL</h5>
+          <h5>$699.99</h5>
+        </div>
+      </div>
+
+    </section>
+
+
+  </section>
+  <!-- // COMBINED ELEMENTS SECTION -->
+
+
+
+  <section id="basic_branding">
+    <h2 class="element">Basic Branding</h2>
+
+    <section class="element">
+      <h3>What does the company do, or offer?</h3>
+      <p>The company is one that specializes in selling guitar and related equipment such as amplifiers, tuners, cables,
+        and more.</p><br>
+
+      <h3>Who is the company to potential customers? </h3>
+      <p>To potential customers, the company comes off as approachable, yet reliable. It doesn't make beginners feel
+        inadequate, but openly welcomes and nurtures their path to learning the guitar. For intermediate to advanced
+        players, the company also serves as a home and place of comfort while still being knowledgeable and factual.</p>
+      <br>
+
+      <h3>Why might this company entice someone to purchase a product or service?</h3>
+      <p>The primary draw of the company's products is the company's image as trustworthy and reliable. This will be
+        achieved through the type of content displayed such as in-depth breakdowns and details described on product
+        pages and the overall look and feel of the website. Another avenue would be through customer reviews and
+        feedback.</p><br>
+
+    </section>
+  </section>
+
+  <section id="brand_components">
+    <h2 class="element">Brand Components</h2>
+
+    <section class="element">
+      <h3>Font</h3>
+      <p><a href="https://www.fontshare.com/fonts/general-sans" target="_blank">General Sans</a></p>
+    </section>
+
+    <section class="element">
+      <h3>Color Palette</h3>
+      <img src="color_palette.png" alt="Color Palette" style="width:100%;"><br><br>
+
+      <p>The majority of the website is intended to be fairly neutral to accomodate for the variety of products and
+        brands promoted. However, red will be used as the primary accent color. </p>
+    </section>
+
+    <section class="element">
+      <h3>Potential Art Direction</h3>
+
+      <div class="payment-form-row">
+        <img src="guitar_player.jpg" alt="Guitar Player" style="width:50%;">
+        <img src="guitar_player_BW.jpg" alt="Guitar Player BW" style="width:50%;">
+      </div>
+      <p>Generally, photographs of guitarists will be used for non-product pictures. Photographs with warm tones and
+        shorter depth of fields are preferred. Black and white photographs are fine as well. Candid photographs are
+        preferred in natural musical environments such as stages, recording studios, etc.</p>
+
+      <img src="hetfield.jpeg" alt="Hetfield Guitar" style="width:50%;"><br><br>
+      <p>Product images will be professionally shot photographs against light/white backgrounds to demonstrate
+        tangibility and authenticity. </p><br>
+
+
+      <img src="icon_style.png" alt="Icon Style" style="width:50%;"><br><br>
+      <p>Icons will have similar features to the ones pictures. Intended have slightly rounded corners to insinuate
+        friendliness and trustworthiness. Icons will also have a solid and simplistic style.</p>
+
+
+
+
+    </section>
+  </section>
+
+
+
+
+  <section id="citations">
+    <h2 class="element">Citations</h2>
+
+    <ul>
+      <li>Chicago Music Exchange. (Photograph). (nd). <strong>Dunlop Trigger Fly Capo Satin Chrome
+          [Media]</strong>. Retrieved from <a
+          href="https://www.chicagomusicexchange.com/products/dunlop-trigger-fly-capo-satin-chrome-1586195">https://www.chicagomusicexchange.com/products/dunlop-trigger-fly-capo-satin-chrome-1586195</a>
+      </li>
+      <li>Chicago Music Exchange. (Photograph). (nd). <strong>Fender Original 10' Instrument Cable Oxblood
+          [Media]</strong>. Retrieved from <a
+          href="https://www.chicagomusicexchange.com/products/fender-original-10-instrument-cable-oxblood-1440400">https://www.chicagomusicexchange.com/products/fender-original-10-instrument-cable-oxblood-1440400</a>
+      </li>
+      <li>Chicago Music Exchange. (Photograph). (nd). <strong>GFI System Cabzeus Mono Speaker Simulator Pedal
+          [Media]</strong>. Retrieved from <a
+          href="https://www.chicagomusicexchange.com/products/gfi-system-cabzeus-mono-speaker-simulator-pedal-1686202">https://www.chicagomusicexchange.com/products/gfi-system-cabzeus-mono-speaker-simulator-pedal-1686202</a>
+      </li>
+      <li>Chicago Music Exchange. (Photograph). (nd). <strong>Gibson USA Signature Michael Clifford Melody Maker
+          [Media]</strong>. Retrieved from <a
+          href="https://www.chicagomusicexchange.com/products/gibson-usa-signature-michael-clifford-melody-maker-745749">https://www.chicagomusicexchange.com/products/gibson-usa-signature-michael-clifford-melody-maker-745749</a>.
+      </li>
+      <li>Chicago Music Exchange. (Photograph). (nd). <strong>Richter Stronghold II Nylon Guitar Strap Vegan Black
+          [Media]</strong>. Retrieved from <a
+          href="https://www.chicagomusicexchange.com/products/richter-stronghold-ii-nylon-guitar-strap-vegan-black-1647561">https://www.chicagomusicexchange.com/products/richter-stronghold-ii-nylon-guitar-strap-vegan-black-1647561</a>.
+      </li>
+      <li>Hella, Frode. (Designer). 2021. <strong>General Sans [Font]</strong>. Retrieved from <a
+          href="https://www.fontshare.com/fonts/general-sans">hhttps://www.fontshare.com/fonts/general-sans</a></li>
+      <li>Hendry, Bobbe. (Photographer). (2017). <strong>ben howard | sydney, aus | 2015 [Media]</strong>. Retrieved
+        from <a href="https://unsplash.com/photos/MD3rdOB5pxk">https://unsplash.com/photos/MD3rdOB5pxk</a>.</li>
+      <li>Iconify. (Photograph). (nd). <strong> Search, Profile, Cart, Plus, Minus Icons
+          [Icons]</strong>. Retrieved from <a href="https://iconify.design/">https://iconify.design/</a>.
+      </li>
+      <li>Litvinov, Dimitri. (Designer). (nd). <strong>Sendlane Icons [Media]</strong>. Retrieved from <a
+          href="https://dribbble.com/shots/16438406-Sendlane-Icons">https://dribbble.com/shots/16438406-Sendlane-Icons</a>.
+      </li>
+    </ul>
+
+  </section>
+
+
+
+</body>
+
+</html>
