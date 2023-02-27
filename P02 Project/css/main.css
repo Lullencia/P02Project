@@ -43,6 +43,7 @@ body {
   max-width: 60em;
 }
 
+
 .section-content-center {
   margin: 1em 2em 5em 2em;
   display: flex;
@@ -98,6 +99,7 @@ p {
   font-weight: 400;
   font-size: 1em;
   margin: 0;
+  
 }
 
 b {
@@ -143,28 +145,11 @@ code {
   transition-duration: 0.5s;
 }
 
-.button-nav-active {
-  display: inline-block;
-  padding: 0.5em;
-  margin-right: 2.5em;
-
-  font-size: 0.9em;
-
-  color: #CD3B28;
-  font-weight: 500;
-
-  text-decoration: none;
-}
-
 .icon-nav{
   color: #a3a3a3; 
   
   transition-property: color;
   transition-duration: 0.5s;
-}
-
-.icon-nav-active{
-  color: #CD3B28; 
 }
 
 .breadcrumb-nav {
@@ -204,6 +189,11 @@ code {
 
   transition-property: color;
   transition-duration: 0s;
+}
+
+.button-nav:active {
+  color: #CD3B28;
+  font-weight: 500;
 }
 
 .button-submit {
@@ -496,7 +486,7 @@ tr:hover {background-color: #f7f7f7;}
 
   max-width: 15rem;
 
-  margin: 0 1em 1em 0;
+  margin: 0 0.5em;
 
   background-color: #ffffff;
 
@@ -553,10 +543,7 @@ tr:hover {background-color: #f7f7f7;}
   cursor: pointer;
 }
 
-.homeCard img {
-  max-height: fit-content,10rem;
-  
-}
+
 /* Styling only select borders found from https://www.w3docs.com/snippets/css/how-to-remove-and-style-the-border-outline-around-text-input-boxes-in-google-chrome.html */
 
 .navbar {
@@ -638,14 +625,6 @@ tr:hover {background-color: #f7f7f7;}
   justify-content: center;
 
   margin: 1em 3em 1em 3em;
-}
-
-.product-gallery-row {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-
-  margin-bottom: 1em;
 }
 
 
