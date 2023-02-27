@@ -633,6 +633,7 @@ tr:hover {background-color: #f7f7f7;}
   flex-direction: row;
   flex-wrap: nowrap;
 
+  margin-bottom: 1em;
 }
 
 
