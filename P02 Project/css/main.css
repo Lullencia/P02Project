@@ -143,11 +143,28 @@ code {
   transition-duration: 0.5s;
 }
 
+.button-nav-active {
+  display: inline-block;
+  padding: 0.5em;
+  margin-right: 2.5em;
+
+  font-size: 0.9em;
+
+  color: #CD3B28;
+  font-weight: 500;
+
+  text-decoration: none;
+}
+
 .icon-nav{
   color: #a3a3a3; 
   
   transition-property: color;
   transition-duration: 0.5s;
+}
+
+.icon-nav-active{
+  color: #CD3B28; 
 }
 
 .breadcrumb-nav {
@@ -187,11 +204,6 @@ code {
 
   transition-property: color;
   transition-duration: 0s;
-}
-
-.button-nav:active {
-  color: #CD3B28;
-  font-weight: 500;
 }
 
 .button-submit {
