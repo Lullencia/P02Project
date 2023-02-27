@@ -484,7 +484,7 @@ tr:hover {background-color: #f7f7f7;}
 
   max-width: 15rem;
 
-  margin: 0 0.5em;
+  margin: 0 1em 1em 0;
 
   background-color: #ffffff;
 
@@ -631,7 +631,7 @@ tr:hover {background-color: #f7f7f7;}
 .product-gallery-row {
   display: flex;
   flex-direction: row;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
 
   margin-bottom: 1em;
 }
