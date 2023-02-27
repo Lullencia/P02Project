@@ -593,6 +593,15 @@ tr:hover {background-color: #f7f7f7;}
   margin: 1em 3em 1em 3em;
 }
 
+.product-gallery-row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+
+
+  margin: 1em 3em 1em 3em;
+}
+
 
 .hero-img,
 .img {
