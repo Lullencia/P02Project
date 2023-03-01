@@ -16,6 +16,22 @@ body {
   padding: 2rem;
   max-width: 60em;
 }
+.button-nav-active {
+  display: inline-block;
+  padding: 0.5em;
+  margin-right: 2.5em;
+
+  font-size: 0.9em;
+
+  color: #CD3B28;
+  font-weight: 500;
+
+  text-decoration: none;
+}
+
+.icon-nav-active{
+  color: #CD3B28; 
+}
 
 .section-title {
   margin: 1em 2em;
@@ -42,6 +58,7 @@ body {
 
   max-width: 60em;
 }
+
 
 .section-content-center {
   margin: 1em 2em 5em 2em;
@@ -98,6 +115,7 @@ p {
   font-weight: 400;
   font-size: 1em;
   margin: 0;
+  
 }
 
 b {
@@ -106,6 +124,8 @@ b {
 
 a {
   color: #CD3B28;
+  text-decoration: none;
+  
 }
 
 .color-ellipse:hover,
@@ -189,16 +209,11 @@ code {
   transition-duration: 0s;
 }
 
-.button-nav:active {
-  color: #CD3B28;
-  font-weight: 500;
-}
-
 .button-submit {
   display: inline-block;
   padding: 1.25em 3em 1.25em 3em;
 
-  margin: 0.5em;
+  margin: 0 0.5em;
 
   font-size: 0.75em;
   font-weight: 600;
@@ -212,6 +227,13 @@ code {
   transition-duration: 0.25s;
 }
 
+.product-gallery-row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  margin-bottom: 1em;
+}
 .button-submit-red:hover,
 .button-submit-red:focus {
   background-color: #ad3120;
@@ -508,19 +530,33 @@ tr:hover {background-color: #f7f7f7;}
   cursor: pointer;
 }
 
-.homeCard {
+.newsCard {
   /* Add shadows to create the "card" effect */
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0);
 
+  box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0);
   transition-property: box-shadow;
   transition: 0.3s;
-
   max-width: 15rem;
-
+  max-height:25rem;
   margin: 0 0.5em;
 
   background-color: #ffffff;
 
+  border-width: 1px;
+  border-color: #EEE;
+
+  border-style: solid;
+
+}
+
+.newsCard2 {
+  /* Add shadows to create the "card" effect */
+  box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0);
+  transition-property: box-shadow;
+  transition: 0.3s;
+  width: 40rem;
+  margin: 0 0.5em;
+  background-color: #ffffff;
 
   border-width: 1px;
   border-color: #EEE;
@@ -528,23 +564,24 @@ tr:hover {background-color: #f7f7f7;}
   border-style: solid;
 }
 
+.newsCard2:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
 /* Word-wrap found from https://www.w3schools.com/cssref/css3_pr_word-wrap.php */
 
-.homeCard-text {
+.newsCard-text {
   padding: 1rem;
   word-wrap: break-word;
 }
 
 /* On mouse-over, add a deeper shadow */
-.homeCard:hover {
-  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+.newsCard:hover {
+  box-shadow:  0 10px 20px 0 rgba(0, 0, 0, 0.2);
   cursor: pointer;
 }
 
-.homeCard img {
-  max-height: fit-content,10rem;
-  
-}
 /* Styling only select borders found from https://www.w3docs.com/snippets/css/how-to-remove-and-style-the-border-outline-around-text-input-boxes-in-google-chrome.html */
 
 .navbar {
@@ -584,6 +621,7 @@ tr:hover {background-color: #f7f7f7;}
 .product-listing-row {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
 
   margin: 2em;
 }
@@ -591,7 +629,7 @@ tr:hover {background-color: #f7f7f7;}
 .product-listing-column-1 {
   display: flex;
   flex-direction: column;
-  flex-basis: 60rem;
+  flex-basis: 50em;
 
   margin-right: 3em;
 }
@@ -626,13 +664,6 @@ tr:hover {background-color: #f7f7f7;}
   justify-content: center;
 
   margin: 1em 3em 1em 3em;
-}
-
-.product-gallery-row {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-
 }
 
 
