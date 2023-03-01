@@ -697,3 +697,38 @@ tr:hover {background-color: #f7f7f7;}
 
   margin: 1em 0 1em 0;
 }
+
+
+/* Flexbox for Contact us in About_us page */
+.contact{
+  height: auto;
+  display: flex;
+  justify-content: center;
+  flex-wrap: nowrap;
+  align-content: center;
+}
+
+.contact p{
+  padding: 0.1rem;
+}
+
+@media screen and (max-width:40em){
+  .contact{
+    height: auto; 
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-content: center;
+  }
+}
+
+/* Flexbox for Feedback in About_us page */
+.feedback{
+  height: auto; 
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-content: center;
+}
