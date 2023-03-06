@@ -244,7 +244,7 @@ code {
   display: inline-block;
   padding: 1.25em 3em 1.25em 3em;
 
-  margin: 0.5em;
+  margin: 0;
 
   font-size: 0.75em;
   font-weight: 600;
@@ -268,7 +268,8 @@ code {
   display: inline-block;
   padding: 1.25em 3em 1.25em 3em;
 
-  margin: 0.5em;
+  margin: 0;
+  margin-top: 0.75em;
 
   font-size: 0.75em;
   font-weight: 600;
@@ -415,12 +416,12 @@ tr:hover {background-color: #f7f7f7;}
 .payment-form-column {
   display: flex;
   flex-direction: column;
+  max-width:40vw;
 }
 
 .payment-form-column-2 {
   display: flex;
   flex-direction: column;
-
   margin-right: 1em;
 }
 

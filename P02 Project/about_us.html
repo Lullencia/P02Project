@@ -108,37 +108,40 @@ Email: placeholder@dayrep.com
 
     <section class ="section-title">
         <h2>Feedback</h2>
-    </section>
+        <div class="product-listing-column-2">
+    
 
-    <section class="Element">
-        <div class="feedback">
-            <form action="submit.php" method="post">
-                <figure>
-                    <label for="name">Name:</label>
-                    <input type="text" id="name" name="name" >
-                </figure>
+    <div class="payment-form-column">
+        <label class="text-input-label" for="fname-field">Name</label>
+        <input type="text" placeholder="Full Name" class="text-input-field" id="fname-field" name="input">
+    </div>
 
-                <figure>
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" >
-                </figure>
+    <div class="payment-form-column">
+        <label class="text-input-label" for="cnumber">Email</label>
+        <input type="text" placeholder="@email.com" class="text-input-field" id="cnumber"
+            name="input">
+    </div>
 
-                <figure>
-                    <label for="productID">Product ID:</label>
-                    <input type="productID" id="prouductID" name="productID" >
-                </figure>
-
-                <figure>
-                    <label for="message">Message:</label>
-                    <textarea id="message" name="message" ></textarea>
-                </figure>
-
-                <figure>
-                    <input type="submit" value="Submit">
-                </figure>
-            </form>
+    <div class="payment-form-column">
+        
+            <label class="text-input-label" for="expiration-field">ProductID Date</label>
+            <input type="text" placeholder="8-digit-code" class="text-input-field" id="expiration-field"
+                name="input">
         </div>
-    </section>
+        <div class="payment-form-column">
+            <label class="text-input-label" for="security-field">Message</label>
+            <textarea id="message" name="message" rows="4" placeholder="Enter message here" >
+            </textarea>
+            
+        </div>
+    </div>
+
+
+    <br>
+    <input type="submit" class="button-submit-red" value="SUBMIT FORM">
+    
+</div>
+</section>
 
 
 
