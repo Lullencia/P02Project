@@ -16,13 +16,23 @@
 <body>
     <!---This code is for the nav bar-->
     <div class="navbar">
-        <div class="nav-links">
-            <a href="product_listing.html" class="button-nav">Best Sellers</a>
-            <a href="about_us.html" class="button-nav">About Us</a>
+
+        <div class="hamburger" id="toggle" aria-controls="menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
         </div>
-        <a href="home.html">
-            <h4 class="red-color">Six String Avenue</h4>
-        </a>
+
+        <ul class="navbar-menu" id="menu">
+            <li class="navbar-item">
+                <a style="color:#a3a3a3;" href="product_listing.html" class="nav-link">Products</a>
+            </li>
+            <li class="navbar-item">
+                <a style="color:#a3a3a3;" href="about_us.html" class="nav-link">About Us</a>
+            </li>
+        </ul>
+
+        <a href="home.html"><h4 class="red-color">Six String Avenue</h4></a>
         <div class="nav-links">
             <div class="nav-links">
                 <iconify-icon icon="ph:magnifying-glass-bold" class="icon-nav" width="1.25rem"></iconify-icon>
@@ -33,12 +43,13 @@
                 <a class="button-nav">Profile</a>
             </div>
             <div class="nav-links">
-                <a href="checkout.html"><iconify-icon icon="material-symbols:shopping-cart-outline" href="checkout.html"
-                        class="icon-nav" width="1.5rem"></iconify-icon></a>
+                <a href="checkout.html"><iconify-icon icon="material-symbols:shopping-cart-outline" href="checkout.html" class="icon-nav"
+                    width="1.5rem"></iconify-icon></a>
                 <a href="checkout.html" class="button-nav">Cart</a>
             </div>
         </div>
     </div>
+    <script src="js/nav.js"></script>
     <!---This code is for the nav bar-->
 
 
@@ -68,7 +79,7 @@
 
     <div id="recommended">
         <section class="section-content-center">
-            <h2>Products</h2> <br><br>
+            <h2>Best Sellers</h2> <br><br>
             <div class="img-gallery-row">
                 <div class="card">
                     <a href="product_page.html"><img src="img/dunlop-capo.jpg" alt="Dunlop Capo" style="width: 100%;">
@@ -142,7 +153,7 @@
 
                 <div class="newsCard-text">
                     <h5>Latest News</h5>
-                    <h4>Renowned Guitarist John Smith Joins Forces with Six String Avenue to Launch Signature Model</h4>
+                    <h4 > Renowned Guitarist John Smith Joins Forces with Six String Avenue to Launch Signature Model</h4>
 
 
                 </div>

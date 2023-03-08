@@ -16,10 +16,22 @@
 <body>
     <!---This code is for the nav bar-->
     <div class="navbar">
-        <div class="nav-links">
-            <a href="product_listing.html" class="button-nav">Products</a>
-            <a href="about_us.html" class="button-nav-active">About Us</a>
+
+        <div class="hamburger" id="toggle" aria-controls="menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
         </div>
+
+        <ul class="navbar-menu" id="menu">
+            <li class="navbar-item">
+                <a style="color:#a3a3a3;" href="product_listing.html" class="nav-link">Products</a>
+            </li>
+            <li class="navbar-item">
+                <a style="color:#CD3B28;" href="about_us.html" class="nav-link">About Us</a>
+            </li>
+        </ul>
+
         <a href="home.html"><h4 class="red-color">Six String Avenue</h4></a>
         <div class="nav-links">
             <div class="nav-links">
@@ -37,7 +49,7 @@
             </div>
         </div>
     </div>
-
+    <script src="js/nav.js"></script>
         <!---This code is for the nav bar-->
 
     <section class="section-title">

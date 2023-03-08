@@ -6,6 +6,7 @@ body {
   background-color: #ffffff;
   color: #191919;
   font-family: 'GeneralSans';
+
 }
 
 .element {
@@ -125,8 +126,13 @@ b {
 a {
   color: #CD3B28;
   text-decoration: none;
-  
 }
+
+ .test{
+  color: #a3a3a3;
+  text-decoration: none;
+}
+
 
 .color-ellipse:hover,
 .color-ellipse:focus,
@@ -600,7 +606,42 @@ tr:hover {background-color: #f7f7f7;}
 
   margin: auto;
 
-  padding: 1.5em 2em;
+  padding: 1.5em 2em 2em 0;
+
+  
+}
+
+.navbar-menu{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 3.75rem;
+  
+}
+ul{
+  color: #a3a3a3;
+
+}
+.navbar-link {
+  color: white;
+  transition-duration: 0.4s;
+}
+.navbar-item {
+  transition-duration: 0.4s;
+  list-style: none;
+}
+.hamburger{
+  display: none;
+  cursor: pointer;
+  padding: 0 3rem;
+}
+.bar{
+  display: block;
+  width: 1.563rem;
+  height: 0.188rem;
+  margin: 0.313rem;
+  transition: all 0.3s ease-in-out;
+  background-color: #CD3B28;
 }
 
 .nav-links {
@@ -712,7 +753,7 @@ tr:hover {background-color: #f7f7f7;}
   padding: 0.1rem;
 }
 
-@media screen and (max-width:40em){
+@media (max-width:40em){
   .contact{
     height: auto; 
     display: flex;
@@ -722,6 +763,67 @@ tr:hover {background-color: #f7f7f7;}
     align-content: center;
   }
 }
+@media (min-width: 75rem) {
+
+}
+@media (max-width: 75rem) {
+  .hamburger{
+    display: block;
+    
+}
+.hamburger.active .bar:nth-child(2){
+  opacity: 0;
+}
+.hamburger.active .bar:nth-child(1){
+  transform: translateY(0.5rem) rotate(45deg);
+}
+.hamburger.active .bar:nth-child(3){
+  transform: translateY(-0.5rem) rotate(-45deg);
+}
+.navbar {
+  height: 4rem;
+}
+
+.navbar-menu{
+  position: fixed;
+  right: -100%;
+  top: 2.75rem;
+  gap: 0;
+  flex-direction: column;
+  background-color: white;
+  width: 10rem;
+  text-align: center;
+  transition: 0.3s;
+  padding: 0;
+}
+
+.navbar-item{
+  margin: 1rem 0;
+}
+
+.navbar-menu.active{
+  left: 0;
+  margin-top: 2em;
+}
+
+body{
+  --navbar-height: 4rem;
+  padding-top: var(--nav-height);
+}
+
+}
+
+@media (min-width: 50rem){
+
+}
+@media (max-width: 50rem){
+
+}
+/* 400px  / 16 = 25rem */
+@media(max-width: 25rem){
+
+}
+
 
 /* Flexbox for Feedback in About_us page */
 .feedback{
