@@ -835,7 +835,7 @@ body{
   background-color: #ad3120;
   color: white;
 }
-.footerCopyright{
+.footerCopy{
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -844,10 +844,10 @@ body{
   margin-top: 5rem;
 }
 #copyright{
-  font-size: 0.73rem;
+  font-size: 0.70rem;
 }
 .footerLink{
-  transition-duration: 0.3s;
+  transition-duration: 0.5s;
   color: white;
 }
 .footerLink:hover, .footerLink:focus{
