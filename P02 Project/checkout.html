@@ -17,10 +17,22 @@
 <body>
     <!---This code is for the nav bar-->
     <div class="navbar">
-        <div class="nav-links">
-            <a href="product_listing.html" class="button-nav">Products</a>
-            <a href="about_us.html" class="button-nav">About Us</a>
+
+        <div class="hamburger" id="toggle" aria-controls="menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
         </div>
+
+        <ul class="navbar-menu" id="menu">
+            <li class="navbar-item">
+                <a href="product_listing.html" class="nav-links">Products</a>
+            </li>
+            <li class="navbar-item">
+                <a href="about_us.html" class="nav-links">About Us</a>
+            </li>
+        </ul>
+
         <a href="home.html"><h4 class="red-color">Six String Avenue</h4></a>
         <div class="nav-links">
             <div class="nav-links">
@@ -32,13 +44,13 @@
                 <a class="button-nav">Profile</a>
             </div>
             <div class="nav-links">
-                <iconify-icon icon="material-symbols:shopping-cart-outline" class="icon-nav-active"
-                    width="1.5rem"></iconify-icon>
-                <a href="checkout.html" class="button-nav-active">Cart</a>
+                <a href="checkout.html"><iconify-icon icon="material-symbols:shopping-cart-outline" href="checkout.html" class="icon-nav"
+                    width="1.5rem"></iconify-icon></a>
+                <a href="checkout.html" class="button-nav">Cart</a>
             </div>
         </div>
     </div>
-
+    <script src="js/nav.js"></script>
     <!---This code is for the nav bar-->
 
     <div class="breadcrumb-links">
@@ -158,6 +170,17 @@
             </div>
         </div>
     </section>
+    <footer class="footer footerCopy">
+        <div>
+            <h4 class="footerH1" id="copyright">Copyright © 2023, Six String Avenue.</h4>
+        </div>
+        <div class="footer">
+            <h6 class="footerText"><a class="footerLink" href="about_us.html" >Contact</a></h6>
+            <h6 class="footerText">Cookies</h6>
+            <h6 class="footerText">Terms</h6>
+            <h6 class="footerText">Privacy</h6>
+        </div>
+    </footer>
 </body>
 
 </html>
