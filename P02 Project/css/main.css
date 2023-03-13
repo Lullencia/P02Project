@@ -430,7 +430,7 @@ tr:hover {
 .payment-form-column {
   display: flex;
   flex-direction: column;
-  max-width: 40vw;
+  max-width: 40vw; 
 }
 
 .payment-form-column-2 {
@@ -456,7 +456,7 @@ tr:hover {
   justify-content: space-between;
   padding-bottom: 1em;
 
-
+  flex-wrap: wrap; 
 
 }
 
@@ -467,11 +467,14 @@ tr:hover {
 
   justify-content: space-between;
   margin-top: 2em;
+  margin-bottom: 2em;
+
   padding-top: 2em;
   padding-right: 2em;
 
 
   border-top: 1px solid #EEE;
+  border-bottom: 1px solid #EEE;
 }
 
 .product-form-column {
@@ -769,11 +772,22 @@ ul {
     justify-content: center;
     align-content: center;
   }
+  
+  .button-nav{
+    display: none;
+  }
+  
+  .icon-nav{
+    margin-right: 2em;
+  }
+
 }
 
-@media (min-width: 75rem) {}
+@media (min-width: 75rem) {
+}
 
 @media (max-width: 75rem) {
+  
   .hamburger {
     display: block;
 
