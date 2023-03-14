@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Checkout</title>
+    <title>Checkout Payment</title>
 
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/main.css">
@@ -56,9 +56,9 @@
     <!---This code is for the nav bar-->
 
     <div class="breadcrumb-links">
-        <a href = "checkout.html" class="breadcrumb-nav-red">Cart</a>
+        <a href = "checkout.html" class="breadcrumb-nav">Cart</a>
         <a href = "checkout_shipping.html" class = "breadcrumb-nav">Shipping</a>
-        <a href = "checkout_payment.html" class = "breadcrumb-nav">Payment</a>
+        <a href = "checkout_payment.html" class = "breadcrumb-nav-red">Payment</a>
         <a href = "checkout_confirmation.html" class = "breadcrumb-nav">Confirmation</a>
     </div>
 
@@ -70,33 +70,52 @@
     <section id="shopping-cart">
         <div class="product-listing-row">
             <div class="product-listing-column-2">
-                <h4>Customer Information</h4>
+                <h4>Payment Method</h4><br>
+                <table>
+                    <tr>
+                        <td>
+                            <input type="radio" class="radio-input" id="credit-card" name="input">
+                            <label class="radio-text-input" for="credit-card">Credit Card</label>
 
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="radio" class="radio-input" id="paypal" name="input">
+                            <label class="radio-text-input" for="paypal">Paypal</label>
+                        </td>
+                    </tr>
+                </table><br>
 
                 <div class="payment-form-column">
-                    <label class="text-input-label" for="name-field">Full Name</label>
-                    <input type="text" placeholder="Full Name" class="text-input-field" id="name-field" name="input">
+                    <label class="text-input-label" for="fname-field">Cardholder Name</label>
+                    <input type="text" placeholder="Full Name" class="text-input-field" id="fname-field" name="input">
                 </div>
 
-
                 <div class="payment-form-column">
-                    <label class="text-input-label" for="email">Email</label>
-                    <input type="text" placeholder="yourname@email.com" class="text-input-field" id="email" name="input">
-                </div>
-
-                <div class="payment-form-column">
-                    <label class="text-input-label" for="phone-number">Phone Number</label>
-                    <input type="text" placeholder="XXX-XXX-XXXX" class="text-input-field" id="phone-number"
+                    <label class="text-input-label" for="cnumber">Card Number</label>
+                    <input type="text" placeholder="1234-1234-1234-1234" class="text-input-field" id="cnumber"
                         name="input">
                 </div>
-                
+
+                <div class="payment-form-row">
+                    <div class="payment-form-column-2">
+                        <label class="text-input-label" for="expiration-field">Expiration Date</label>
+                        <input type="text" placeholder="MM / YY" class="text-input-field" id="expiration-field"
+                            name="input">
+                    </div>
+                    <div class="payment-form-column-2">
+                        <label class="text-input-label" for="security-field">Security Code</label>
+                        <input type="text" placeholder="CVC" class="text-input-field" id="security-field" name="input">
+                    </div>
+                </div>
+
 
                 <br><br>
-
-
-                <a href="checkout_shipping.html" class="button-submit-red">PROCEED TO SHIPPING</a>
+                
+                <a href="checkout_confirmation.html" class="button-submit-red">FINALIZE ORDER</a>
                 <input type="reset" class="button-reset" value="CANCEL ORDER">
             </div>
+
 
             <div class="product-listing-column-1">
                 <h4>Your Order</h4><br>
@@ -153,7 +172,7 @@
 
                 <div class="product-form-row-total">
                     <h4 class="black-color">CHECKOUT TOTAL</h5>
-                    <p><u>$899.96</u></p>
+                        <p><u>$899.96</u></p>
                 </div>
 
             </div>

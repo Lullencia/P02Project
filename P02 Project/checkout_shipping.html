@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Checkout</title>
+    <title>Checkout Shipping</title>
 
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/main.css">
@@ -56,8 +56,8 @@
     <!---This code is for the nav bar-->
 
     <div class="breadcrumb-links">
-        <a href = "checkout.html" class="breadcrumb-nav-red">Cart</a>
-        <a href = "checkout_shipping.html" class = "breadcrumb-nav">Shipping</a>
+        <a href = "checkout.html" class="breadcrumb-nav">Cart</a>
+        <a href = "checkout_shipping.html" class = "breadcrumb-nav-red">Shipping</a>
         <a href = "checkout_payment.html" class = "breadcrumb-nav">Payment</a>
         <a href = "checkout_confirmation.html" class = "breadcrumb-nav">Confirmation</a>
     </div>
@@ -70,31 +70,42 @@
     <section id="shopping-cart">
         <div class="product-listing-row">
             <div class="product-listing-column-2">
-                <h4>Customer Information</h4>
-
-
+                <h4>Shipping Address</h4>
+                
                 <div class="payment-form-column">
-                    <label class="text-input-label" for="name-field">Full Name</label>
-                    <input type="text" placeholder="Full Name" class="text-input-field" id="name-field" name="input">
-                </div>
-
-
-                <div class="payment-form-column">
-                    <label class="text-input-label" for="email">Email</label>
-                    <input type="text" placeholder="yourname@email.com" class="text-input-field" id="email" name="input">
-                </div>
-
-                <div class="payment-form-column">
-                    <label class="text-input-label" for="phone-number">Phone Number</label>
-                    <input type="text" placeholder="XXX-XXX-XXXX" class="text-input-field" id="phone-number"
+                    <label class="text-input-label" for="address">Street Address</label>
+                    <input type="text" placeholder="Street Name and Number" class="text-input-field" id="address"
                         name="input">
                 </div>
-                
+
+
+                <div class="payment-form-row">
+                    <div class="payment-form-column-2">
+                        <label class="text-input-label" for="city">City</label>
+                        <input type="text" placeholder="City" class="text-input-field" id="city" name="input">
+                    </div>
+                    <div class="payment-form-column-2">
+                        <label class="text-input-label" for="zipcode">Zip Code</label>
+                        <input type="text" placeholder="XXX-XXX" class="text-input-field" id="zipcode" name="input">
+                    </div>
+                </div>
+
+                <div class="payment-form-row">
+                    <div class="payment-form-column-2">
+                        <label class="text-input-label" for="country">Country</label>
+                        <input type="text" placeholder="Country" class="text-input-field" id="country" name="input">
+                    </div>
+                    <div class="payment-form-column-2">
+                        <label class="text-input-label" for="state">State</label>
+                        <input type="text" placeholder="State" class="text-input-field" id="state" name="input">
+                    </div>
+                </div>
+
 
                 <br><br>
 
 
-                <a href="checkout_shipping.html" class="button-submit-red">PROCEED TO SHIPPING</a>
+                <a href="checkout_payment.html" class="button-submit-red">PROCEED WITH PAYMENT</a>
                 <input type="reset" class="button-reset" value="CANCEL ORDER">
             </div>
 
