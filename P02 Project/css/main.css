@@ -22,12 +22,9 @@ body {
   display: inline-block;
   padding: 0.5em;
   margin-right: 2.5em;
-
   font-size: 0.9em;
-
   color: #CD3B28;
   font-weight: 500;
-
   text-decoration: none;
 }
 
@@ -948,8 +945,8 @@ ul {
   opacity: 70%;
   text-align: center;
 }
-
-.slideshow-container {
+/* https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_slideshow */
+.slideshow-container { 
   max-width: 1000px;
   position: relative;
   margin: auto;
@@ -995,10 +992,10 @@ ul {
   width: 100%;
 
   justify-content: center;
-
 }
 
 @keyframes fade {
   from {opacity: .4} 
   to {opacity: 1}
 }
+
