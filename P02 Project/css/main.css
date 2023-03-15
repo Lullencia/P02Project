@@ -819,7 +819,7 @@ ul {
 }
 
 
-/*Different media queries for screen sizes*/
+/*These media queries are more for the special features such as buttons, hamburger menu*/
 @media (max-width:40em) {
   .contact {
     height: auto;
@@ -837,38 +837,26 @@ ul {
   .icon-nav {
     margin-right: 2em;
   }
-
 }
-
-@media (min-width: 75rem) {
-
-}
-
 
 @media (max-width: 75rem) {
   .hamburger {
     display: block;
-
   }
-
   .hamburger.active .bar:nth-child(2) {
     opacity: 0;
     background-color: white;
   }
-
   .hamburger.active .bar:nth-child(1) {
     transform: translateY(0.5rem) rotate(45deg);
   }
-
   .hamburger.active .bar:nth-child(3) {
     transform: translateY(-0.5rem) rotate(-45deg);
   }
-
   .navbar {
     height: 4rem;
     z-index: 1;
   }
-
   .navbar-menu {
     position: fixed;
     right: -100%;
@@ -880,17 +868,12 @@ ul {
     text-align: center;
     transition: 0.3s;
     padding: 0;
-   
-    
   }
-
 
   .navbar-item {
     margin: 1rem 0;
-
     font-size: 0.9em;
   }
-
   .navbar-menu.active {
     left: 0;
     margin-top: 2em;
@@ -902,13 +885,15 @@ ul {
     padding-top: var(--nav-height);
   }
 }
-
 @media (min-width: 50rem) {
   .prev, .next,.text {font-size: 11px}
-  
 }
 
+
+
 @media only screen and (max-width: 768px) {
+  /*Screens smaller than 768 pixel AKA mobile devices
+  For more basic control such as text sizing*/
   
     h3{
       font-size: 2.2em;
@@ -944,6 +929,7 @@ ul {
     
     }
   }
+
   
 
 /* Flexbox for Feedback in About_us page */
