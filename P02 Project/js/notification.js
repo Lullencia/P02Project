@@ -21,3 +21,4 @@ function notify(type,message){
   function notifyAdded(){
     notify("added","Item Added To Cart");
   }
+  /*https://www.youtube.com/watch?v=pbg6uLXm5gc&ab_channel=AngelaDesign */
