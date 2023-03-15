@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/fonts.css">
+    <script src="js/notification.js"></script>
 
     <script src="https://code.iconify.design/iconify-icon/1.0.2/iconify-icon.min.js"></script>
 
@@ -32,7 +33,9 @@
             </li>
         </ul>
 
-        <a href="home.html"><h4 class="red-color">Six String Avenue</h4></a>
+        <a href="home.html">
+            <h4 class="red-color">Six String Avenue</h4>
+        </a>
         <div class="nav-links">
             <div class="nav-links">
                 <iconify-icon icon="ph:magnifying-glass-bold" class="icon-nav" width="1.25rem"></iconify-icon>
@@ -43,16 +46,19 @@
                 <a class="button-nav">Profile</a>
             </div>
             <div class="nav-links">
-                <a href="checkout.html"><iconify-icon icon="material-symbols:shopping-cart-outline" href="checkout.html" class="icon-nav"
-                    width="1.5rem"></iconify-icon></a>
+                <a href="checkout.html"><iconify-icon icon="material-symbols:shopping-cart-outline" href="checkout.html"
+                        class="icon-nav" width="1.5rem"></iconify-icon></a>
                 <a href="checkout.html" class="button-nav">Cart</a>
             </div>
         </div>
     </div>
     <script src="js/nav.js"></script>
+    <script src="js/hideNavbar.js"></script>
 
     <!---This code is for the nav bar-->
+   
 
+    <br><br>
     <div class="breadcrumb-links">
         <a class="breadcrumb-nav">Brands</a>
         <a class="breadcrumb-nav">Gibson</a>
@@ -63,12 +69,15 @@
         <h2>Michael Clifford Signature Melody Maker</h2>
         <h4>Model: #MMMC19JCBH</h4>
     </section>
+    <div id="notification-area">
+    </div>
 
 
     <section id="gallery">
         <div class="product-listing-row">
-            <div class="product-listing-column-1">
-                <img src="img/clifford.png" alt="Gibson Guitar" class="hero-img" style="width:100%">
+            <div class="product-listing-column-4">
+                <img src="img/clifford-hero.png" alt="Gibson Guitar" class="hero-img" height="400em"
+                    style="width:100%; object-fit: cover;">
 
                 <div class="img-gallery-row">
                     <img src="img/clifford-6.png" alt="Gibson Guitar" class="img" style="width:10%">
@@ -81,7 +90,7 @@
                     <img src="img/clifford-5.png" alt="Gibson Guitar" class="img" style="width:10%">
                 </div>
             </div>
-            <div class="product-listing-column-2">
+            <div class="product-listing-column-3">
                 <div class="product-listing-text-column">
                     <h5 class="black-color">Brand</h5>
                     <p><a href="https://www.gibson.com/en-US/" target="_blank">Gibson</a></p>
@@ -103,11 +112,14 @@
                     </div>
                 </div>
 
-                <input type="submit" class="button-submit-red" value="ADD TO CART">
+                
+                <a href="#"onclick="notifyAdded()"class="button-submit-red">ADD TO CART</a>
+
                 <input type="reset" class="button-reset" value="IN-STORE AVAILABLITY">
             </div>
         </div>
     </section>
+    
 
 
     <div class="section-full-bleed">
@@ -234,13 +246,15 @@
             </div>
         </section>
     </div>
+    <div id="notification-area">
+    </div>
 
     <footer class="footer footerCopy">
         <div>
             <h4 class="footerH1" id="copyright">Copyright © 2023, Six String Avenue.</h4>
         </div>
         <div class="footer">
-            <h6 class="footerText"><a class="footerLink" href="about_us.html" >Contact</a></h6>
+            <h6 class="footerText"><a class="footerLink" href="about_us.html">Contact</a></h6>
             <h6 class="footerText">Cookies</h6>
             <h6 class="footerText">Terms</h6>
             <h6 class="footerText">Privacy</h6>

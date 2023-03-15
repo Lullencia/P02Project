@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/fonts.css">
+    
 
     <script src="https://code.iconify.design/iconify-icon/1.0.2/iconify-icon.min.js"></script>
 
@@ -52,29 +53,71 @@
         </div>
     </div>
     <script src="js/nav.js"></script>
+    <script src="js/hideNavbar.js"></script>
     <!---This code is for the nav bar-->
 
 
+    <div class="slideshow-container">
 
+        <div class="mySlides fade">
+          <img src="img/home.jpg" alt="">
+        </div>
+        
+        <div class="mySlides fade">
+          <img src="img/home2.jpg" alt=""  >
+        </div>
+        
+        <div class="mySlides fade">
+          <img src="img/home3.jpg" alt="" >
+        </div>
+        
+        <a class="prev" onclick="plusSlides(-1)">❮</a>
+        <a class="next" onclick="plusSlides(1)">❯</a>
+        
+        </div>
+        <br>
+        
+        <div style="text-align:center">
+          <span class="dot" onclick="currentSlide(1)"></span> 
+          <span class="dot" onclick="currentSlide(2)"></span> 
+          <span class="dot" onclick="currentSlide(3)"></span> 
+        </div>
+        
+        <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+        
+        function plusSlides(n) {
+          showSlides(slideIndex += n);
+        }
+        
+        function currentSlide(n) {
+          showSlides(slideIndex = n);
+        }
+        
+        function showSlides(n) {
+          let i;
+          let slides = document.getElementsByClassName("mySlides");
+          let dots = document.getElementsByClassName("dot");
+          if (n > slides.length) {slideIndex = 1}    
+          if (n < 1) {slideIndex = slides.length}
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+          }
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " active";
+        }
+        </script>
 
-
-    <!---This code is for the footer (work in progress)-->
-    <div>
-
-
-
-
-    </div>
-    <!---This code is for the footer-->
-
-
-    <!--Placeholder image for intro image -->
-    <div>
-        <img src="img/home.jpg" alt="Dunlop Capo" height="500" style="width:100%; object-fit: cover;">
-    </div>
     <section class="section-content-center">
         <br>
         <h3>Browse our selection, find your perfect guitar, and start playing today!</h3>
+        <br>
+        <a href="about_us.html">
+            <input type="submit" class="button-submit" value="Learn More"></a>
 
     </section>
 
@@ -140,8 +183,13 @@
                 <button>View All</button>
             </form>
 
+<<<<<<< HEAD
             <a href="product_listing.html"><input type="submit" class="button-submit" value="View All"></a>
             -->
+=======
+            <a href="product_listing.html">
+                <input type="submit" class="button-submit" value="View All"></a>
+>>>>>>> main
         </section>
     </div>
 
