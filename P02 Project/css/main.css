@@ -253,8 +253,8 @@ code {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-
   margin-bottom: 1em;
+
 }
 
 .button-submit-red:hover,
@@ -898,10 +898,10 @@ ul {
 
 
 
-@media only screen and (max-width: 1200px) {
-  /*Screens smaller than 1200 pixel AKA mobile devices
+@media only screen and (max-width: 700px) {
+  /*Screens smaller than 768 pixel AKA mobile devices
   For more basic control such as text sizing*/
-  
+
   .img-gallery-row {
     display: flex;
     flex-direction: row;
@@ -912,17 +912,9 @@ ul {
     margin: 1em 3em 1em 3em;
   }
   
-    
- 
-  }
-  
-@media only screen and (max-width: 700px) {
-  /*Screens smaller than 768 pixel AKA mobile devices
-  For more basic control such as text sizing*/
-  
   .newsCard2 {
     max-width: 15rem;
-   max-height: 25rem;
+    max-height: 25rem;
     
   }
   .newsCard-text{
@@ -935,9 +927,25 @@ ul {
   }
   
   
-    
+  }
+
+@media only screen and (min-width: 1400px) {
+  /*Screens smaller than 1200 pixel AKA mobile devices
+  For more basic control such as text sizing*/
+  
+  
+  .newsCard{
+   
+    flex-direction: row;
+  }
+  
+  .product-gallery-row{
+    flex-basis: 33%;
+  }
  
   }
+  
+
 
   
 
