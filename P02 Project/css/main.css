@@ -664,6 +664,7 @@ tr:hover {
   justify-content: space-between;
   align-items: center;
   gap: 3.75rem; 
+  background-color: white;
   z-index: 1;
 
 }
@@ -852,6 +853,7 @@ ul {
 
   .hamburger.active .bar:nth-child(2) {
     opacity: 0;
+    background-color: white;
   }
 
   .hamburger.active .bar:nth-child(1) {
@@ -892,6 +894,7 @@ ul {
   .navbar-menu.active {
     left: 0;
     margin-top: 2em;
+    background-color: white;
   }
 
   body {
@@ -942,11 +945,6 @@ ul {
     }
   }
   
-
-
-
-
-
 
 /* Flexbox for Feedback in About_us page */
 .feedback {
@@ -1043,7 +1041,7 @@ ul {
   z-index: 0;
 }
 
-.active, .dot:hover {
+.dot.active {
   background-color: #717171;
 }
 
