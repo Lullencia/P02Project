@@ -704,19 +704,32 @@ ul {
   margin: 2em;
 
   gap: 5em;
+  width: 90%;
 }
 
 .product-listing-column-1 {
   display: flex;
   flex-direction: column;
-  flex-basis: 35em;
+  flex-basis: 30em;
 
 }
 
 .product-listing-column-2 {
   display: flex;
   flex-direction: column;
-  flex-basis: 45rem;
+  flex-basis: 45em;
+}
+
+.product-listing-column-3 {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 25em;
+}
+
+.product-listing-column-4 {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 50em;
 }
 
 .product-listing-text-column {
@@ -732,6 +745,7 @@ ul {
   align-items: center;
 
   justify-content: space-between;
+  gap: 0.5em;
   margin: 0.5em 0 0.5em 0;
 }
 
