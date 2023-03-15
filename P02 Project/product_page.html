@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/fonts.css">
+    <script src="js/notification.js"></script>
 
     <script src="https://code.iconify.design/iconify-icon/1.0.2/iconify-icon.min.js"></script>
 
@@ -54,6 +55,8 @@
     <script src="js/nav.js"></script>
 
     <!---This code is for the nav bar-->
+   
+
 
     <div class="breadcrumb-links">
         <a class="breadcrumb-nav">Brands</a>
@@ -65,6 +68,8 @@
         <h2>Michael Clifford Signature Melody Maker</h2>
         <h4>Model: #MMMC19JCBH</h4>
     </section>
+    <div id="notification-area">
+    </div>
 
 
     <section id="gallery">
@@ -107,11 +112,13 @@
                 </div>
 
                 
-                <a href="checkout_shipping.html" class="button-submit-red">ADD TO CART</a>
+                <a href="#"onclick="notifyAdded()"class="button-submit-red">ADD TO CART</a>
+
                 <input type="reset" class="button-reset" value="IN-STORE AVAILABLITY">
             </div>
         </div>
     </section>
+    
 
 
     <div class="section-full-bleed">
@@ -237,6 +244,8 @@
 
             </div>
         </section>
+    </div>
+    <div id="notification-area">
     </div>
 
     <footer class="footer footerCopy">
