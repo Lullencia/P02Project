@@ -605,6 +605,8 @@ tr:hover {
   border-color: #EEE;
 
   border-style: solid;
+
+  margin-bottom: 1em;
 }
 
 .newsCard2:hover {
@@ -670,7 +672,7 @@ tr:hover {
 }
 
 ul {
-  color: white;
+  color: #191919;
 
 }
 
@@ -767,7 +769,7 @@ ul {
 .img-gallery-row {
   display: flex;
   flex-direction: row;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
 
   justify-content: center;
 
@@ -843,6 +845,11 @@ ul {
   .hamburger {
     display: block;
   }
+
+  .hamburger.active{
+    background-color: white;
+  }
+  
   .hamburger.active .bar:nth-child(2) {
     opacity: 0;
     background-color: white;
@@ -1020,8 +1027,12 @@ ul {
   z-index: 0;
 }
 
-.dot.active {
+.dot:hover,.dot.active {
   background-color: #717171;
+}
+
+.active {
+  background-color: grey;
 }
 
 .fade {
