@@ -811,7 +811,7 @@ ul {
 .contact {
   height: auto;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   flex-wrap: nowrap;
   align-content: center;
 }
