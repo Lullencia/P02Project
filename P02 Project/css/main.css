@@ -348,7 +348,7 @@ code {
   color: #5A5A5A;
 
   margin: 1.5em 0 0.25em 0;
-  z-index: -1;
+ 
 }
 
 .text-input-field {
@@ -376,7 +376,7 @@ code {
   text-decoration: none;
   transition-property: background-color;
   transition-duration: 0.25s;
-  z-index: -1;
+
 }
 
 
@@ -386,7 +386,7 @@ code {
 .text-input-field:focus {
   background-color: #f7f7f7;
   cursor: text;
-  z-index: -1;
+
 }
 
 
@@ -650,6 +650,7 @@ tr:hover {
   border-bottom-style: solid;
   margin: auto;
   padding: 1em 0 1em 0;
+  z-index: 1;
 
 
 }
@@ -863,6 +864,7 @@ ul {
 
   .navbar {
     height: 4rem;
+    z-index: 1;
   }
 
   .navbar-menu {
@@ -876,6 +878,7 @@ ul {
     text-align: center;
     transition: 0.3s;
     padding: 0;
+   
     
   }
 
@@ -1004,7 +1007,7 @@ ul {
   max-width: 1000px;
   position: relative;
   margin: auto;
-  z-index: -1;
+  z-index: 0;
 }
 .prev, .next {
   cursor: pointer;
@@ -1019,11 +1022,13 @@ ul {
   transition: 0.6s ease;
   border-radius: 0 3px 3px 0;
   user-select: none;
+  z-index: 0;
 }
 
 .next {
   right: 0;
   border-radius: 3px 0 0 3px;
+  z-index: 0;
 }
 .dot {
   cursor: pointer;
@@ -1034,6 +1039,10 @@ ul {
   border-radius: 50%;
   display: inline-block;
   transition: background-color 0.6s ease;
+  z-index: 0;
+}
+.active, .dot:hover {
+  background-color: #717171;
 }
 
 
