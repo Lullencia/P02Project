@@ -105,10 +105,10 @@
             slides[i].style.display = "none";  
           }
           for (i = 0; i < dots.length; i++) {
-            dots[i].className = dots[i].className.replace(" active", "");
+            dots[i].className = dots[i].className.replace(" activeDot", "");
           }
           slides[slideIndex-1].style.display = "block";  
-          dots[slideIndex-1].className += " active";
+          dots[slideIndex-1].className += " activeDot";
         }
         </script>
 
@@ -116,7 +116,8 @@
         <br>
         <h3>Browse our selection, find your perfect guitar, and start playing today!</h3>
         <br>
-        <a href="about_us.html" class="button-submit">LEARN MORE</a>
+        <a href="about_us.html">
+            <input type="submit" class="button-submit" value="Learn More"></a>
 
     </section>
 
@@ -177,25 +178,11 @@
                 </div>
 
             </div>
-<<<<<<< HEAD
-<!--
-            <form style="display: inline" action="product_listing.html" method="get">
-                <button>View All</button>
-            </form>
 
-<<<<<<< HEAD
-            <a href="product_listing.html"><input type="submit" class="button-submit" value="View All"></a>
-            -->
-=======
+
             <a href="product_listing.html">
                 <input type="submit" class="button-submit" value="View All"></a>
->>>>>>> main
         </section>
-=======
-
-
-            <a href="product_listing.html" class="button-submit">VIEW ALL</a>
->>>>>>> main
     </div>
 
 
@@ -242,7 +229,7 @@
         </div>
 
 
-        <input type="submit" class="button-submit" value="VIEW ALL">
+        <input type="submit" class="button-submit" value="View All">
 
 
 

@@ -925,6 +925,15 @@ ul {
    max-height: 25rem;
     
   }
+  .newsCard-text{
+    font-size: 80%;
+
+  }
+  .card-text{
+    font-size: 80%;
+
+  }
+  
   
     
  
@@ -1027,7 +1036,7 @@ ul {
   z-index: 0;
 }
 
-.dot:hover,.dot.active {
+.dot:hover,.dot.activeDot {
   background-color: #717171;
 }
 
