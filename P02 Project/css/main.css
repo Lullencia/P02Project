@@ -1043,7 +1043,9 @@ ul {
   z-index: 0;
 }
 
-
+.active, .dot:hover {
+  background-color: #717171;
+}
 
 .fade {
   animation-name: fade;
