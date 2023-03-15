@@ -822,9 +822,13 @@ ul {
 
 }
 
-@media (min-width: 75rem) {}
+@media (min-width: 75rem) {
+
+}
+
 
 @media (max-width: 75rem) {
+
 
   .hamburger {
     display: block;
@@ -879,9 +883,19 @@ ul {
 
 @media (min-width: 50rem) {
   .prev, .next,.text {font-size: 11px}
+  
 }
 
-@media (max-width: 50rem) {
+@media (max-width: 68rem) {
+  h3{
+    font-weight: 600;
+    font-size: 1.2em;
+
+    margin: 0.25em 0 0.25em 0;
+
+   text-transform: uppercase;
+
+  }
 
 }
 
