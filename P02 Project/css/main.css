@@ -1005,7 +1005,7 @@ ul {
 /* https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_slideshow */
 .slideshow-container { 
   max-width: 100vw;
-  height:30rem;
+  height:40rem;
   position: relative;
   margin: auto;
   z-index: 0;
@@ -1051,7 +1051,7 @@ ul {
 }
 .mySlides img{
   width: 100%;
-  height: 30rem;
+  height: 40rem;
   justify-content: center;
   object-fit: cover;
 }
