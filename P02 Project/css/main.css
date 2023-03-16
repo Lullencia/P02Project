@@ -1098,8 +1098,8 @@ ul {
   padding:1rem 0.3rem;
   background:#111;
   color:#f5f5f5;
-  font-family: "Roboto-Light", Verdana, sans-serif;
-  font-size: 1rem;
+  font-family: "GeneralSans-Regular";
+  font-size: 0.9em;
   text-align: center;
   font-weight: lighter;
   border-radius: 0.5rem;
@@ -1115,5 +1115,5 @@ ul {
   }
 }
 #notification-area .notification.added {
-  background:#389838;
-}
+  background:#4B9F31;
+} 
